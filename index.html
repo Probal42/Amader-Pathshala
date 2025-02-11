@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amader Pathshala</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/amader-pathshala-logo.png" alt="Amader Pathshala Logo" width="80" height="80" class="d-inline-block align-top">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1>WELCOME TO AMADER PATHSHALA</h1>
+            <p>Providing quality education for underprivileged children</p>
+            <a href="#courses" class="btn btn-light">Explore Courses</a>
+        </div>
+    </header>
+
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2>About Us</h2>
+            <p>Amader Pathshala is a non-profit organization dedicated to providing free education to underprivileged children. Our mission is to empower young minds with knowledge and skills that will help them build a brighter future. We offer comprehensive educational programs focusing on core subjects, life skills, and personal development.</p>
+            <hr>
+            <h3>Images</h3>
+            <p>Take a look at some moments from our school activities.</p>
+            <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/image1.jpg" class="d-block w-100" alt="School Activity 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/image2.jpg" class="d-block w-100" alt="School Activity 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/image3.jpg" class="d-block w-100" alt="School Activity 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/image4.jpg" class="d-block w-100" alt="School Activity 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+            </div>
+            
+            <div class="my-5"></div>
+            
+            <h3>Videos</h3>
+            <p>Watch our students in action as they learn and grow.</p>
+            <div class="video-row">
+                <div class="video-item">
+                    <video width="100%" controls>
+                        <source src="videos/video1.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="video-item">
+                    <video width="100%" controls>
+                        <source src="videos/video2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="courses" class="bg-light py-5 text-center">
+        <div class="container">
+            <h2>Our Courses</h2>
+            <p>Explore a variety of educational programs designed for young minds.</p>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">English</h5>
+                            <p class="card-text">Listening, Speaking, Writing, and Reading skills for effective communication.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Mathematics</h5>
+                            <p class="card-text">Building strong foundational math skills for problem-solving and logical thinking.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Communication Skills</h5>
+                            <p class="card-text">Developing verbal and non-verbal communication abilities for confidence and clarity.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">General Knowledge</h5>
+                            <p class="card-text">Enhancing awareness of the world through fun and engaging learning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5 text-center">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024-2025 Amader Pathshala. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
